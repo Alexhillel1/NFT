@@ -3,6 +3,9 @@ body {
   font-size: 20px;
   color: #fff;
   background: linear-gradient(113.49deg, #984d38 -30.3%, #181e41 58.12%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 .container {
@@ -67,6 +70,9 @@ body {
   margin-right: 40px;
 }
 .header-menu__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
   color: #fff;
 }
 
