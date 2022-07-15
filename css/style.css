@@ -162,6 +162,7 @@ body {
 
 .about__title {
   text-align: center;
+  margin-bottom: 30px;
 }
 .about__title-text {
   font-weight: 700;
@@ -179,7 +180,6 @@ body {
   /* half white */
 
   color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 30px;
 }
 
 .about {
@@ -215,7 +215,6 @@ body {
   /* half white */
 
   color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 30px;
 }
 .about__info-btn {
   font-weight: 500;
@@ -224,5 +223,230 @@ body {
   padding: 10px 20px;
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   border-radius: 10px;
+  color: #fff;
+}
+
+.section__card {
+  padding-bottom: 200px;
+}
+.card__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.card__title-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 10px;
+}
+.card__title-desc {
+  margin: 0 auto;
+  width: 423px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+
+  /* half white */
+
+  color: rgba(255, 255, 255, 0.5);
+}
+.card__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.card__item {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 26px;
+  transition: 0.2s;
+}
+
+.card__item:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.card__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+.card__nick {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  /* half white */
+
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+}
+.card__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.info__current {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  /* half white */
+
+  color: rgba(255, 255, 255, 0.5);
+}
+.info__price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.card__btn-link {
+  display: block;
+  text-align: center;
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  border-radius: 10px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #ffffff;
+  position: relative;
+}
+
+.card__btn-link:hover {
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.card__btn-link::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/border.svg);
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card__btn-link:hover::after {
+  opacity: 1;
+}
+
+.collapsible {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: rgba(255, 255, 255, 0.5);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+  color: rgba(255, 255, 255, 1);
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  line-height: 1.5;
+  transition: max-height 0.2s ease-out;
+}
+
+.faq__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.faq__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.faq__title-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.8;
+}
+.faq__title-desc {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.section__faq {
+  padding-bottom: 200px;
+}
+.banner__section {
+  padding-bottom: 200px;
+}
+
+.banner__inner {
+  text-align: center;
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  border-radius: 10px;
+  padding: 50px 15px;
+}
+.banner__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 75px;
+  margin-bottom: 30px;
+}
+.banner__btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px 20px;
   color: #fff;
 }
